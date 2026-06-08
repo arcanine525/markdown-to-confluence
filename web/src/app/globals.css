@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* App-chrome reset — the rendered preview lives inside an iframe with
+   its own <style>, so nothing here leaks into the user's document. */
+html,
+body {
+  height: 100%;
+  background: #ffffff;
+  color: #172b4d;
+}
+
+/* Hide the textarea's default focus ring (we draw our own). */
+textarea:focus {
+  outline: none;
+}

@@ -1,0 +1,38 @@
+{
+  "name": "markdown-to-confluence-web",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Browser-only Markdown → Confluence converter. Nothing leaves your browser.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "preview": "npx serve out",
+    "deploy": "npm run build && firebase deploy --only hosting",
+    "deploy:preview": "npm run build && firebase hosting:channel:deploy preview --expires 7d"
+  },
+  "dependencies": {
+    "@codemirror/lang-markdown": "^6.2.5",
+    "@codemirror/language-data": "^6.5.1",
+    "@codemirror/view": "^6.28.4",
+    "@uiw/react-codemirror": "^4.23.0",
+    "highlight.js": "^11.10.0",
+    "marked": "^12.0.2",
+    "mermaid": "^10.9.1",
+    "next": "^14.2.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.10",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "autoprefixer": "^10.4.19",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^14.2.5",
+    "postcss": "^8.4.40",
+    "tailwindcss": "^3.4.7",
+    "typescript": "^5.5.4"
+  }
+}
